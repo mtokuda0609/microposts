@@ -53,5 +53,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # pagenate
 gem 'kaminari'
 
+# debug
+gem 'pry-byebug', group: :development
 
-
+# Heroku setting
+group :production do
+  gem 'pg'
+end
