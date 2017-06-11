@@ -17,4 +17,7 @@ class User < ApplicationRecord
 #      confirmation: true
 #  validates :password_digest_confirmation, 
 #      presence: true
+
+  has_many :microposts
+
 end
