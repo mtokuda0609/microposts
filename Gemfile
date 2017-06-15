@@ -54,9 +54,16 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'kaminari'
 
 # debug
-gem 'pry-byebug', group: :development
+group :development do
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'awesome_print'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
 
 # Heroku setting
 group :production do
   gem 'pg'
 end
+
